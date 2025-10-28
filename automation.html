@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Automation Equipment | Spark Marine</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .back-btn {
-      display: inline-block;
-      margin: 20px 0;
-      padding: 8px 16px;
-      background-color: #003366;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
+    .hero-bg { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); }
+    .dropdown-content {
+      position: absolute; top: 100%; left: 0;
+      background-color: #002a5c;
+      min-width: 220px; border-radius: 0.25rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      opacity: 0; transform: translateY(5px);
+      pointer-events: none; transition: all 0.25s ease;
+      z-index: 50;
     }
-    .back-btn:hover {
-      background-color: #004080;
-    }
-    ul {
-      line-height: 1.8em;
+    .dropdown-content a { display: block; padding: 10px 16px; color: #fff; text-decoration: none; }
+    .dropdown-content a:hover { background-color: #003366; color: #ffcc00; }
+    .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
+      opacity: 1; transform: translateY(0); pointer-events: auto;
     }
   </style>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li class="dropdown">
-          <a href="#">Our Business ▾</a>
-          <div class="dropdown-content">
+<body class="antialiased text-slate-800 bg-white">
+
+<header class="bg-[#001f3f] text-white sticky top-0 z-50 shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="./assets/logo.png" alt="Spark Marine Logo" class="h-12 w-12 object-contain" />
+        <div>
+          <div class="font-semibold text-lg">Spark Marine Company Limited</div>
+          <div class="text-xs text-gray-300">Marine Electronics • Navigation • Automation • Systems Integrator</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium relative">
+        <a href="index.html#home" class="hover:text-amber-400">Home</a>
+        <a href="index.html#about" class="hover:text-amber-400">About</a>
+        <div class="dropdown relative">
+          <button class="hover:text-amber-400 focus:outline-none">Our Business ▾</button>
+          <div class="dropdown-content absolute left-0">
             <a href="navigation.html">Navigation Equipment</a>
             <a href="automation.html">Automation Equipment</a>
             <a href="communication.html">Communication Equipment</a>
           </div>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        </div>
+        <a href="index.html#strength" class="hover:text-amber-400">Strength</a>
+        <a href="index.html#quality" class="hover:text-amber-400">Quality</a>
+        <a href="index.html#vision" class="hover:text-amber-400">Vision</a>
+        <a href="index.html#contact" class="hover:text-amber-400">Contact</a>
+      </nav>
+      <button id="mobileMenuBtn" class="md:hidden text-xl">☰</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-[#002a5c] text-white">
+    <div class="px-4 py-3 flex flex-col gap-2">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <button id="mobileBusinessToggle" class="text-left">Our Business ▾</button>
+      <div id="mobileBusinessMenu" class="hidden flex flex-col ml-4 mt-1">
+        <a href="navigation.html" class="py-1">Navigation Equipment</a>
+        <a href="automation.html" class="py-1">Automation Equipment</a>
+        <a href="communication.html" class="py-1">Communication Equipment</a>
+      </div>
+      <a href="index.html#strength">Strength</a>
+      <a href="index.html#quality">Quality</a>
+      <a href="index.html#vision">Vision</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
-  <main>
-    <a href="index.html" class="back-btn">← Back to Our Business</a>
-    <h1>Sales & Service of Automation Equipment</h1>
-    <ul>
-      <li>Tank Radar Systems</li>
-      <li>Oil Mist Detection</li>
-      <li>Ullage Measuring System</li>
-      <li>Boiler Controls</li>
-      <li>Main Engine Controls</li>
-      <li>Aux Engine Controls</li>
-      <li>Tank Gauging</li>
-      <li>Generators Overhauling</li>
-      <li>Draught Gauge</li>
-    </ul>
-    <p>Click on below email IDs to contact Automation Equipment Division:</p>
-    <p><strong>For Sales:</strong> <a href="mailto:sales@sparkmarine.net">sales@sparkmarine.net</a><br>
-    <strong>For Service:</strong> <a href="mailto:service@sparkmarine.net">service@sparkmarine.net</a></p>
+<section class="hero-bg text-white text-center py-16">
+  <h1 class="text-3xl font-semibold">Sales & Service of Automation Equipment</h1>
+</section>
 
-    <a href="index.html" class="back-btn">← Back to Our Business</a>
-  </main>
+<main class="max-w-5xl mx-auto px-4 py-12">
+  <a href="index.html" class="inline-block mb-6 text-[#001f3f] font-semibold hover:text-[#003366]">← Back to Our Business</a>
 
-  <footer>
-    <p>© 2025 Spark Marine Company Limited. All rights reserved.</p>
-  </footer>
+  <ul class="list-disc list-inside leading-relaxed text-slate-700">
+    <li>Tank Radar Systems</li>
+    <li>Oil Mist Detection</li>
+    <li>Ullage Measuring System</li>
+    <li>Boiler Controls</li>
+    <li>Main Engine Controls</li>
+    <li>Aux Engine Controls</li>
+    <li>Tank Gauging</li>
+    <li>Generators Overhauling</li>
+    <li>Draught Gauge</li>
+  </ul>
+
+  <p class="mt-6 text-slate-700">Click on below email IDs to contact Automation Equipment Division:</p>
+  <p class="mt-2">
+    <strong>For Sales:</strong> <a href="mailto:sales@sparkmarine.net" class="text-blue-600 hover:underline">sales@sparkmarine.net</a><br>
+    <strong>For Service:</strong> <a href="mailto:service@sparkmarine.net" class="text-blue-600 hover:underline">service@sparkmarine.net</a>
+  </p>
+
+  <a href="index.html" class="inline-block mt-10 text-[#001f3f] font-semibold hover:text-[#003366]">← Back to Our Business</a>
+</main>
+
+<footer class="bg-[#001f3f] text-white py-6">
+  <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+    © <span id="year"></span> Spark Marine Company Limited — Global Headquarters, Singapore
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const btn = document.getElementById('mobileMenuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  const toggle = document.getElementById('mobileBusinessToggle');
+  const sub = document.getElementById('mobileBusinessMenu');
+  toggle && toggle.addEventListener('click', () => sub.classList.toggle('hidden'));
+</script>
 </body>
 </html>
