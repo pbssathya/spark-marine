@@ -8,40 +8,47 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .hero-bg { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); }
-    .comp-card { transition: transform .18s ease, box-shadow .18s ease; }
-    .comp-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-    .section-title { @apply text-2xl font-semibold mb-6 text-slate-800; }
+  .hero-bg { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); }
+  .comp-card { transition: transform .18s ease, box-shadow .18s ease; }
+  .comp-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+  .section-title { @apply text-2xl font-semibold mb-6 text-slate-800; }
 
-    /* Dropdown styling */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #002a5c;
-      min-width: 220px;
-      border-radius: 0.25rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      opacity: 0;
-      transform: translateY(5px);
-      transition: all 0.25s ease;
-      z-index: 50;
-    }
-    .dropdown-content a {
-      display: block;
-      padding: 10px 16px;
-      color: #fff;
-      text-decoration: none;
-    }
-    .dropdown-content a:hover {
-      background-color: #003366;
-      color: #ffcc00;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  /* Improved Dropdown Styling */
+  .dropdown-content {
+    position: absolute;
+    top: 100%; /* flush to bottom of button */
+    left: 0;
+    background-color: #002a5c;
+    min-width: 220px;
+    border-radius: 0.25rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(5px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+    z-index: 50;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #003366;
+    color: #ffcc00;
+  }
+
+  /* New hover fix — keeps dropdown open even when moving cursor slightly */
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus-within .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+</style>
 </head>
 
 <body class="antialiased text-slate-800 bg-white">
