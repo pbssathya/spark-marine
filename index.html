@@ -46,7 +46,7 @@
   <header class="bg-[#001f3f] text-white sticky top-0 z-50 shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="#home" class="flex items-center gap-3">
+        <a href="index.html#home" class="flex items-center gap-3">
           <img src="./assets/logo.png" alt="Spark Marine Logo" class="h-12 w-12 object-contain" />
           <div>
             <div class="font-semibold text-lg">Spark Marine Company Limited</div>
@@ -57,8 +57,8 @@
 
         <!-- DESKTOP NAV -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium relative">
-          <a href="#home" class="hover:text-amber-400">Home</a>
-          <a href="#about" class="hover:text-amber-400">About</a>
+          <a href="index.html#home" class="hover:text-amber-400">Home</a>
+          <a href="index.html#about" class="hover:text-amber-400">About</a>
 
           <div class="dropdown relative">
             <button class="hover:text-amber-400 focus:outline-none">Our Business ▾</button>
@@ -70,10 +70,10 @@
           </div>
 
           <a href="environmental.html" class="hover:text-amber-400">Environmental Engineering</a>
-          <a href="#strength" class="hover:text-amber-400">Strength</a>
-          <a href="#quality" class="hover:text-amber-400">Quality</a>
-          <a href="#vision" class="hover:text-amber-400">Vision</a>
-          <a href="#contact" class="hover:text-amber-400">Contact</a>
+          <a href="index.html#strength" class="hover:text-amber-400">Strength</a>
+          <a href="index.html#quality" class="hover:text-amber-400">Quality</a>
+          <a href="index.html#vision" class="hover:text-amber-400">Vision</a>
+          <a href="index.html#contact" class="hover:text-amber-400">Contact</a>
         </nav>
 
         <button id="mobileMenuBtn" class="md:hidden text-xl">☰</button>
@@ -83,8 +83,8 @@
     <!-- MOBILE MENU -->
     <div id="mobileMenu" class="hidden md:hidden bg-[#002a5c] text-white">
       <div class="px-4 py-3 flex flex-col gap-2">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
         <button id="mobileBusinessToggle" class="text-left">Our Business ▾</button>
         <div id="mobileBusinessMenu" class="hidden flex flex-col ml-4 mt-1">
           <a href="navigation.html">Navigation Equipment</a>
@@ -92,10 +92,10 @@
           <a href="communication.html">Communication Equipment</a>
         </div>
         <a href="environmental.html">Environmental Engineering</a>
-        <a href="#strength">Strength</a>
-        <a href="#quality">Quality</a>
-        <a href="#vision">Vision</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#strength">Strength</a>
+        <a href="index.html#quality">Quality</a>
+        <a href="index.html#vision">Vision</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </div>
   </header>
@@ -109,43 +109,51 @@
   <!-- ABOUT -->
   <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <h2 class="text-2xl font-semibold mb-6 text-slate-800">Company Profile</h2>
-    <p class="text-slate-700 leading-relaxed">Spark Marine Company Limited, head office in Dammam, Saudi Arabia, has over 20 years of proven experience in Marine Electronics, Communication, Navigation, Automation, and Environmental Equipment.</p>
+    <p class="text-slate-700 leading-relaxed">
+      Spark Marine Company Limited, head office in Dammam, Saudi Arabia, has over 20 years of proven experience in Marine Electronics, Communication, Navigation, Automation, and Environmental Equipment. 
+      The company is ISO 9001:2015 certified and follows IMO and SOLAS regulations.
+    </p>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="bg-gray-50 py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold mb-6 text-center text-slate-800">Contact Us</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-        <div class="bg-white p-8 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-4">Get in Touch</h3>
-          <form id="contactForm" class="space-y-4">
-            <input required name="name" placeholder="Name" class="w-full border rounded-md px-3 py-2" />
-            <input required type="email" name="email" placeholder="Email" class="w-full border rounded-md px-3 py-2" />
-            <textarea required name="message" placeholder="Message" rows="4" class="w-full border rounded-md px-3 py-2"></textarea>
-            <button type="submit" class="px-4 py-2 bg-[#001f3f] text-white rounded-md">Send Message</button>
-          </form>
-          <div id="formNotice" class="mt-4 text-green-600 hidden">Thanks for the email. Will contact back soon.</div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold">Saudi Arabia (Head Office)</h4>
+          <p class="text-sm mt-2 text-slate-700 leading-relaxed">
+            Ash Sharq Dist. Al 1<br>
+            Kokab<br>
+            Mobile: +966 546274044 / 599578429<br>
+            Email: <a href="mailto:info@sparkmarine.net" class="text-blue-600 hover:underline">info@sparkmarine.net</a>
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h4 class="font-semibold">Saudi Arabia (Head Office)</h4>
-            <p class="text-sm mt-2 text-slate-700 leading-relaxed">
-              Ash Sharq Dist. Al 1<br>
-              Kokab<br>
-              Mobile: +966 546274044 / 599578429<br>
-              Email: <a href="mailto:info@sparkmarine.net" class="text-blue-600 hover:underline">info@sparkmarine.net</a>
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow">
-            <h4 class="font-semibold">Bahrain</h4>
-            <p class="text-sm mt-2 text-slate-700">Manama, Bahrain</p>
-          </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold">Bahrain</h4>
+          <p class="text-sm mt-2 text-slate-700">Manama, Bahrain</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold">Singapore</h4>
+          <p class="text-sm mt-2 text-slate-700">Global Headquarters<br>Singapore</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold">India</h4>
+          <p class="text-sm mt-2 text-slate-700">Cochin, Kerala</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold">Indonesia</h4>
+          <p class="text-sm mt-2 text-slate-700">Jakarta, Indonesia</p>
         </div>
       </div>
     </div>
   </section>
+
   <footer class="bg-[#001f3f] text-white py-6 text-center text-sm">
     © <span id="year"></span> Spark Marine Company Limited — Global Headquarters, Singapore
   </footer>
@@ -158,9 +166,6 @@
     const toggle = document.getElementById('mobileBusinessToggle');
     const sub = document.getElementById('mobileBusinessMenu');
     toggle && toggle.addEventListener('click', () => sub.classList.toggle('hidden'));
-    const form = document.getElementById('contactForm');
-    const notice = document.getElementById('formNotice');
-    form && form.addEventListener('submit', function(e){ e.preventDefault(); form.reset(); notice.classList.remove('hidden'); });
   </script>
 </body>
 </html>
