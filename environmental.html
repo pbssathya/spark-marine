@@ -85,4 +85,36 @@
 <section class="hero-bg text-white text-center py-24">
   <div class="hero-content">
     <h1 class="text-4xl font-semibold">Environmental Engineering Division</h1>
-   
+    <p class="text-lg mt-3 text-gray-200">Sales & Service of Environmental Systems</p>
+  </div>
+</section>
+
+<main class="max-w-5xl mx-auto px-4 py-12">
+  <a href="index.html" class="inline-block mb-6 text-[#001f3f] font-semibold hover:text-[#003366]">← Back to Home</a>
+  <ul class="list-disc list-inside text-slate-700 leading-relaxed">
+    <li>Oil Mist Detector</li>
+    <li>Oil Discharge Monitoring System</li>
+  </ul>
+  <p class="mt-6 text-slate-700">Contact Environmental Engineering Division:</p>
+  <p>
+    <strong>Sales:</strong> <a href="mailto:sales@sparkmarine.net" class="text-blue-600 hover:underline">sales@sparkmarine.net</a><br>
+    <strong>Service:</strong> <a href="mailto:service@sparkmarine.net" class="text-blue-600 hover:underline">service@sparkmarine.net</a>
+  </p>
+  <a href="index.html" class="inline-block mt-10 text-[#001f3f] font-semibold hover:text-[#003366]">← Back to Home</a>
+</main>
+
+<footer class="bg-[#001f3f] text-white py-6 text-center text-sm">
+  © <span id="year"></span> Spark Marine Company Limited — Global Headquarters, Singapore
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const btn=document.getElementById('mobileMenuBtn');
+  const menu=document.getElementById('mobileMenu');
+  btn&&btn.addEventListener('click',()=>menu.classList.toggle('hidden'));
+  const toggle=document.getElementById('mobileBusinessToggle');
+  const sub=document.getElementById('mobileBusinessMenu');
+  toggle&&toggle.addEventListener('click',()=>sub.classList.toggle('hidden'));
+</script>
+</body>
+</html>
