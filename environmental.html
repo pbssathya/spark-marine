@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Environmental Engineering | Spark Marine</title>
+  <meta name="description" content="Environmental Engineering — Oil Mist Detectors & Oil Discharge Monitoring Systems (Sales & Service)" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* keep dropdown hover fix/theme consistent */
+    .dropdown { position: relative; }
+    .dropdown-content {
+      position: absolute; top: 100%; left: 0;
+      background-color: #002a5c;
+      min-width: 220px; border-radius: 0.25rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      opacity: 0; transform: translateY(5px);
+      pointer-events: none; transition: all 0.20s ease; z-index:50;
+    }
+    .dropdown-content a { display:block; padding:10px 16px; color:#fff; text-decoration:none; white-space:nowrap; }
+    .dropdown-content a:hover { background:#003366; color:#ffcc00; }
+    .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
+      opacity:1; transform:translateY(0); pointer-events:auto;
+    }
+
+    /* Hero styling */
+    .env-hero {
+      position: relative;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow: hidden;
+    }
+    .env-hero .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,12,30,0.45); /* darkening overlay */
+      backdrop-filter: blur(2px);
+    }
+    .env-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .env-hero svg { position: absolute; left:0; top:0; width:100%; height:100%; object-fit:cover; z-index:1; }
+    .back-btn { color:#001f3f; font-weight:600; display:inline-block; margin-bottom:1rem; }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-white">
+  <!-- HEADER (same as index) -->
+  <header class="bg-[#001f3f] text-white sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="./assets/logo.png" alt="Spark Marine Logo" class="h-12 w-12 object-contain" />
+          <div>
+            <div class="font-semibold text-lg">Spark Marine Company Limited</div>
+            <div class="text-xs text-gray-300">Marine Electronics • Navigation • Automation • Systems Integrator</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium relative">
+          <a href="index.html#home" class="hover:text-amber-400">Home</a>
+          <a href="index.html#about" class="hover:text-amber-400">About</a>
+
+          <div class="dropdown">
+            <button class="hover:text-amber-400 focus:outline-none">Our Business ▾</button>
+            <div class="dropdown-content">
+              <a href="navigation.html">Navigation Equipment</a>
+              <a href="automation.html">Automation Equipment</a>
+              <a href="communication.html">Communication Equipment</a>
+            </div>
+          </div>
+
+          <a href="environmental.html" class="hover:text-amber-400">Environmental Engineering</a>
+
+          <a href="index.html#strength" class="hover:text-amber-400">Strength</a>
+          <a href="index.html#quality" class="hover:text-amber-400">Quality</a>
+          <a href="index.html#vision" class="hover:text-amber-400">Vision</a>
+          <a href="index.html#contact" class="hover:text-amber-400">Contact</a>
+        </nav>
+
+        <button id="mobileMenuBtn" class="md:hidden text-xl">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#002a5c] text-white">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <button id="mobileBusinessToggle" class="text-left">Our Business ▾</button>
+        <div id="mobileBusinessMenu" class="hidden flex flex-col ml-4 mt-1">
+          <a href="navigation.html" class="py-1">Navigation Equipment</a>
+          <a href="automation.html" class="py-1">Automation Equipment</a>
+          <a href="communication.html" class="py-1">Communication Equipment</a>
+        </div>
+        <a href="environmental.html">Environmental Engineering</a>
+        <a href="index.html#strength">Strength</a>
+        <a href="index.html#quality">Quality</a>
+        <a href="index.html#vision">Vision</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO with embedded SVG (marine machinery style) -->
+  <section class="env-hero">
+    <!-- Inline SVG background (scales crisply) -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#002a5c"/>
+          <stop offset="100%" stop-color="#001f3f"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="100%" height="100%" fill="url(#g1)"/>
+      <!-- subtle ship silhouette -->
+      <g opacity="0.95">
+        <path d="M0 430 L300 430 L420 400 L1180 400 L1400 430 L1600 430 L1600 700 L0 700 Z" fill="#07182a"/>
+        <rect x="920" y="275" width="230" height="120" fill="#0b2b49"/>
+        <rect x="1008" y="220" width="40" height="80" fill="#12324f"/>
+      </g>
+
+      <!-- simple gear-like outlines -->
+      <g stroke="#9fbfe0" stroke-width="6" fill="none" opacity="0.55">
+        <circle cx="280" cy="460" r="85"/>
+        <circle cx="500" cy="540" r="60"/>
+        <circle cx="1220" cy="460" r="95"/>
+      </g>
+
+      <!-- pipeline lines -->
+      <path d="M600 420 C760 360 920 420 1100 390 1280 360 1360 380 1500 360" stroke="#7fa7cf" stroke-width="10" fill="none" opacity="0.55"/>
+      <!-- faint grid lines to hint schematic -->
+      <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+        <!-- verticals -->
+        <!-- simplified due to file size -->
+        <line x1="100" y1="0" x2="100" y2="700"/>
+        <line x1="260" y1="0" x2="260" y2="700"/>
+        <line x1="420" y1="0" x2="420" y2="700"/>
+        <line x1="580" y1="0" x2="580" y2="700"/>
+      </g>
+    </svg>
+
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="text-3xl md:text-4xl font-semibold">Environmental Engineering Division</h1>
+      <p class="mt-3 text-sm md:text-base text-gray-200 max-w-2xl mx-auto">Sales & Service — Oil Mist Detectors · Oil Discharge Monitoring Systems</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-5xl mx-auto px-4 py-12">
+    <a href="index.html" class="back-btn">← Back to Our Business</a>
+
+    <h2 class="text-2xl font-semibold mb-4 text-slate-800">Sales & Service of Environmental Equipment</h2>
+
+    <ul class="list-disc list-inside leading-relaxed text-slate-700">
+      <li>Oil Mist Detector</li>
+      <li>Oil Discharge Monitoring System</li>
+    </ul>
+
+    <p class="mt-6 text-slate-700">Click on below email IDs to contact Environmental Engineering Division:</p>
+    <p class="mt-2">
+      <strong>For Sales:</strong> <a href="mailto:sales@sparkmarine.net" class="text-blue-600 hover:underline">sales@sparkmarine.net</a><br>
+      <strong>For Service:</strong> <a href="mailto:service@sparkmarine.net" class="text-blue-600 hover:underline">service@sparkmarine.net</a>
+    </p>
+
+    <a href="index.html" class="block mt-10 back-btn">← Back to Our Business</a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#001f3f] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+      © <span id="year"></span> Spark Marine Company Limited — Global Headquarters, Singapore
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    const toggle = document.getElementById('mobileBusinessToggle');
+    const sub = document.getElementById('mobileBusinessMenu');
+    toggle && toggle.addEventListener('click', () => sub.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
