@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pbssathya.github.io/spark-marine/sitemap.xml
