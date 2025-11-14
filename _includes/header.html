@@ -6,26 +6,35 @@
         <img src="{{ '/assets/logo.png' | relative_url }}" alt="Spark Marine Logo" class="h-12 w-12 object-contain" />
         <div>
           <div class="font-semibold text-lg">Spark Marine Company Limited</div>
-          <div class="text-xs text-gray-300">Marine Electronics • Navigation • Automation • Systems Integrator</div>
-          <div class="text-[11px] font-semibold mt-1 text-amber-400 iso-glow">An ISO 9001:2015 Certified Firm</div>
+          <div class="text-xs text-gray-300">
+            Marine Electronics • Navigation • Automation • Systems Integrator
+          </div>
+          <div class="text-[11px] font-semibold mt-1 text-amber-400 iso-glow">
+            An ISO 9001:2015 Certified Firm
+          </div>
         </div>
       </a>
 
       <!-- DESKTOP NAV -->
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium relative">
+
         <a href="{{ '/' | relative_url }}#home" class="hover:text-amber-400">Home</a>
 
+        <!-- Dropdown -->
         <div class="dropdown relative">
           <button class="hover:text-amber-400 focus:outline-none">Our Business ▾</button>
           <div class="dropdown-content absolute left-0">
-            <a href="{{ '/navigation.html' | relative_url }}">Navigation Equipment</a>
-            <a href="{{ '/automation.html' | relative_url }}">Automation Equipment</a>
-            <a href="{{ '/communication.html' | relative_url }}">Communication Equipment</a>
+            <a href="{{ '/navigation' | relative_url }}">Navigation Equipment</a>
+            <a href="{{ '/automation' | relative_url }}">Automation Equipment</a>
+            <a href="{{ '/communication' | relative_url }}">Communication Equipment</a>
           </div>
         </div>
 
-        <a href="{{ '/environmental.html' | relative_url }}" class="hover:text-amber-400">Environmental Engineering</a>
-        <a href="{{ '/index.html#contact' | relative_url }}" class="hover:text-amber-400">Contact</a>
+        <a href="{{ '/environmental' | relative_url }}" class="hover:text-amber-400">
+          Environmental Engineering
+        </a>
+
+        <a href="{{ '/' | relative_url }}#contact" class="hover:text-amber-400">Contact</a>
       </nav>
 
       <button id="mobileMenuBtn" class="md:hidden text-xl">☰</button>
@@ -35,17 +44,19 @@
   <!-- MOBILE MENU -->
   <div id="mobileMenu" class="hidden md:hidden bg-[#002a5c] text-white">
     <div class="px-4 py-3 flex flex-col gap-2">
+
       <a href="{{ '/' | relative_url }}#home">Home</a>
 
       <button id="mobileBusinessToggle" class="text-left">Our Business ▾</button>
       <div id="mobileBusinessMenu" class="hidden flex flex-col ml-4 mt-1">
-        <a href="{{ '/navigation.html' | relative_url }}">Navigation Equipment</a>
-        <a href="{{ '/automation.html' | relative_url }}">Automation Equipment</a>
-        <a href="{{ '/communication.html' | relative_url }}">Communication Equipment</a>
+        <a href="{{ '/navigation' | relative_url }}">Navigation Equipment</a>
+        <a href="{{ '/automation' | relative_url }}">Automation Equipment</a>
+        <a href="{{ '/communication' | relative_url }}">Communication Equipment</a>
       </div>
 
-      <a href="{{ '/environmental.html' | relative_url }}">Environmental Engineering</a>
-      <a href="{{ '/index.html#contact' | relative_url }}">Contact</a>
+      <a href="{{ '/environmental' | relative_url }}">Environmental Engineering</a>
+      <a href="{{ '/' | relative_url }}#contact">Contact</a>
+
     </div>
   </div>
-</header> 
+</header>
