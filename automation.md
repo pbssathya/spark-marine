@@ -1,80 +1,65 @@
 ---
 layout: default
 title: Automation Equipment
+permalink: /automation/
 ---
 
-<!-- HERO SECTION -->
-<section class="relative w-full h-[380px] flex items-center justify-center text-white"
-         style="background: url('/spark-marine/assets/automation-bg.jpg') center/cover no-repeat;">
-    <div class="bg-black/40 w-full h-full absolute inset-0"></div>
-    <div class="relative z-10 text-center px-6">
-        <h1 class="text-4xl font-bold drop-shadow-lg">Automation Equipment</h1>
-        <p class="mt-4 max-w-2xl mx-auto text-lg drop-shadow">
-            Advanced marine automation systems for safe, efficient and reliable vessel operations.
-        </p>
-    </div>
+<!-- PAGE BANNER -->
+<section class="relative w-full h-72 bg-cover bg-center flex items-center justify-center"
+style="background-image: url('{{ '/assets/automation-bg.jpg' | relative_url }}');">
+  <div class="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+      Automation Equipment
+    </h1>
+  </div>
 </section>
 
-<!-- CONTENT SECTION -->
-<section class="max-w-6xl mx-auto px-6 lg:px-8 py-12 leading-relaxed">
+<!-- PAGE CONTENT -->
+<div class="max-w-5xl mx-auto px-6 py-12 text-slate-800 leading-relaxed">
 
-### Marine Automation Systems
+  <h2 class="text-2xl font-semibold mb-4">Automation Systems & Control Solutions</h2>
 
-Spark Marine Company Limited provides world-class automation solutions used across commercial vessels, offshore platforms, tankers, and special-purpose marine fleets.
+  <p class="mb-6">
+    Spark Marine Company Limited offers a comprehensive suite of marine automation systems designed
+    to enhance operational reliability, improve vessel efficiency, and ensure compliance with
+    international standards. Our experienced automation engineers deliver advanced solutions for
+    vessels operating in Saudi Arabia, Bahrain, Singapore, India, Indonesia, and global ports.
+  </p>
 
-Our expertise covers both **integration** and **full-cycle support** for a wide range of equipment.
+  <p class="mb-6">
+    We support a wide range of integrated automation, control, and monitoring systems for both new
+    installations and retrofit projects. Our expertise ensures seamless operation, quick fault
+    diagnosis, and optimized vessel performance across various marine applications.
+  </p>
 
----
+  <h3 class="text-xl font-semibold mt-10 mb-3">Our Automation Capabilities</h3>
 
-## 🔧 Systems We Support
+  <ul class="list-disc ml-6 space-y-2">
+    <li>Main Engine Control & Monitoring Systems</li>
+    <li>Power Management Systems (PMS)</li>
+    <li>Alarm Monitoring Systems (AMS)</li>
+    <li>Tank Level Gauging & Ballast Control Systems</li>
+    <li>Boiler Automation & Safety Systems</li>
+    <li>Steering Gear & Thruster Automation</li>
+    <li>Integrated Automation System (IAS) Upgrades</li>
+    <li>PLC Programming & System Integration</li>
+  </ul>
 
-### **1. Main Engine Control & Monitoring**
-- Control room automation  
-- Engine RPM monitoring  
-- Alarm & protection systems  
-- Fuel flow & performance indicators  
+  <h3 class="text-xl font-semibold mt-10 mb-3">Why Choose Spark Marine?</h3>
 
----
+  <ul class="list-disc ml-6 space-y-2">
+    <li>Certified automation engineers with global exposure</li>
+    <li>Fastest response time in the Middle East — within 30 minutes</li>
+    <li>Compliance with IMO, SOLAS, and Class regulations</li>
+    <li>Round-the-clock onboard and remote support</li>
+    <li>Expertise in all major automation brands</li>
+  </ul>
 
-### **2. Generator & Power Management Systems (PMS)**
-- Load sharing & synchronization  
-- Auto start/stop sequences  
-- Fault diagnostics  
-- Emergency power switching  
+  <div class="text-center mt-12">
+    <a href="{{ '/' | relative_url }}" 
+       class="inline-block px-6 py-3 bg-[#001f3f] text-white rounded-lg hover:bg-[#003366] transition">
+      ← Back to Home
+    </a>
+  </div>
 
----
-
-### **3. Tank Level Gauging & Ballast Control**
-- Radar and pressure-type measurement  
-- Ballast automation panels  
-- Remote valve control systems  
-
----
-
-### **4. Alarm Monitoring & Control Systems (AMS)**
-- Centralized vessel alarm panels  
-- Bridge repeater systems  
-- Data logging & fault reports  
-
----
-
-### **5. HVAC & Engine Room Ventilation Control**
-- Temperature regulation  
-- Fire & smoke automation interlocks  
-- Motor control units (MCUs)  
-
----
-
-## 🌍 Global Service Coverage
-We deploy automation engineers across  
-**Saudi Arabia, Bahrain, Singapore, India, and Indonesia** — providing rapid onboard attendance and remote diagnostics.
-
----
-
-## 📞 Need Assistance?
-Our marine automation team is available 24×7 for emergency support and routine maintenance.
-
-[Contact Us](index.html#contact){:class="text-blue-700 font-semibold hover:underline"}
-
-</section>
- 
+</div>
