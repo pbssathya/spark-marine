@@ -4,16 +4,27 @@ title: "Spark Marine Company Limited — Marine Electronics, Navigation & Automa
 description: "Spark Marine — 20+ years of Marine Electronics, Communication, Navigation, Automation & Environmental Equipment expertise."
 ---
 
-<!-- HERO SECTION -->
-<section id="home" class="hero-bg text-white py-20 px-6 text-center">
-  <h1 class="text-4xl font-bold">20+ Years of Expertise in Marine Electronics, Navigation, Communication and Automation Engineer</h1>
-  <p class="mt-4 max-w-2xl mx-auto text-gray-200">
-    Serving the Middle East, Asia & Beyond — with presence in Saudi Arabia, Bahrain, India, Singapore, and Indonesia.
-  </p>
+<!-- HERO SECTION WITH IMAGE -->
+<section id="home" 
+  class="relative text-white py-28 px-6 text-center bg-cover bg-center bg-no-repeat"
+  style="background-image: url('/spark-marine/assets/hero-home.jpg');">
+
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/45"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold leading-tight">
+      20+ Years of Expertise in Marine Electronics, Navigation, Communication and Automation Engineer
+    </h1>
+    <p class="mt-4 text-gray-200">
+      Serving the Middle East, Asia & Beyond — with presence in Saudi Arabia, Bahrain, India, Singapore, and Indonesia.
+    </p>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
   <h2 class="text-2xl font-semibold mb-4 text-slate-800">Company Profile</h2>
   <p class="text-slate-700 leading-relaxed mb-3">
     Spark Marine Company Limited, head office in Dammam, Saudi Arabia, has over 20 years of proven experience in Marine Electronics, Communication, Navigation, Automation, and Environmental Equipment.
@@ -24,7 +35,7 @@ description: "Spark Marine — 20+ years of Marine Electronics, Communication, N
 </section>
 
 <!-- STRENGTH -->
-<section id="strength" class="bg-gray-50 py-12">
+<section id="strength" class="bg-gray-50">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl font-semibold mb-4 text-slate-800">Our Strength</h2>
     <p class="text-slate-700 leading-relaxed mb-3">
@@ -37,7 +48,7 @@ description: "Spark Marine — 20+ years of Marine Electronics, Communication, N
 </section>
 
 <!-- QUALITY -->
-<section id="quality" class="py-12">
+<section id="quality">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl font-semibold mb-4 text-slate-800">Quality</h2>
     <p class="text-slate-700 leading-relaxed">
@@ -47,7 +58,7 @@ description: "Spark Marine — 20+ years of Marine Electronics, Communication, N
 </section>
 
 <!-- VISION -->
-<section id="vision" class="bg-gray-50 py-12">
+<section id="vision" class="bg-gray-50">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h2 class="text-2xl font-semibold mb-4 text-slate-800">Our Vision</h2>
     <p class="text-slate-700 leading-relaxed max-w-3xl mx-auto">
@@ -57,11 +68,11 @@ description: "Spark Marine — 20+ years of Marine Electronics, Communication, N
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="bg-gray-100 py-12">
+<section id="contact" class="bg-gray-100">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl font-semibold mb-4 text-center text-slate-800">Contact Us</h2>
 
-    <div class="grid grid-cols-1 lg:grid-cols-1 gap-6 mt-8">
+    <div class="grid grid-cols-1 gap-6 mt-8">
       <div class="bg-white p-6 rounded-xl shadow">
         <h4 class="font-semibold">Saudi Arabia (Head Office)</h4>
         <p class="text-sm mt-2 text-slate-700 leading-relaxed">
