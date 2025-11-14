@@ -5,50 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="author" content="Spark Marine Company Limited" />
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://pbssathya.github.io/spark-marine{{ page.url }}" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:url" content="https://pbssathya.github.io/spark-marine{{ page.url }}" />
+  <meta property="og:image" content="https://pbssathya.github.io/spark-marine/assets/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+  <meta name="twitter:image" content="https://pbssathya.github.io/spark-marine/assets/og-image.jpg" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/spark-marine/assets/favicon-32.png" sizes="32x32"/>
+  <link rel="apple-touch-icon" href="/spark-marine/assets/apple-touch-icon.png"/>
+
+  <meta name="theme-color" content="#001f3f" />
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    .hero-bg { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); }
+    /* Global spacing reduction for all pages */
+    p {
+      margin-bottom: 0.6rem !important;
+    }
+    section p:last-child {
+      margin-bottom: 0 !important;
+    }
+    section {
+      padding-top: 2.5rem !important;     /* Reduced from py-16 */
+      padding-bottom: 2.5rem !important;  /* Cleaner corporate spacing */
+    }
+
+    /* Hero background (kept as original) */
+    .hero-bg {
+      background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
+    }
+
+    /* Desktop dropdown */
     .dropdown { position: relative; }
     .dropdown-content {
-      position: absolute; top: 100%; left: 0;
+      position: absolute;
+      top: 100%; left: 0;
       background-color: #002a5c;
-      min-width: 220px; border-radius: 0.25rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      min-width: 220px;
+      border-radius: 0.25rem;
       opacity: 0; transform: translateY(5px);
-      pointer-events: none; transition: all 0.2s ease; z-index: 50;
+      pointer-events: none;
+      transition: all 0.2s ease;
+      z-index: 50;
     }
     .dropdown-content a {
-      display:block; padding:10px 16px; color:#fff; 
-      text-decoration:none; white-space:nowrap;
+      display: block;
+      padding: 10px 16px;
+      color: #fff;
+      white-space: nowrap;
+      text-decoration: none;
     }
-    .dropdown-content a:hover { background:#003366; color:#ffcc00; }
-    .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
-      opacity:1; transform:translateY(0); pointer-events:auto;
+    .dropdown-content a:hover {
+      background: #003366;
+      color: #ffcc00;
     }
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* ISO glowing text */
     .iso-glow {
       animation: glow 2.5s ease-in-out infinite alternate;
     }
     @keyframes glow {
       from { color: #ffcc00; }
-      to   { color: #fff3b0; }
+      to { color: #fff3b0; }
     }
   </style>
 </head>
 
 <body class="antialiased text-slate-800 bg-white">
 
+  <!-- Header Include -->
   {% include header.html %}
 
-  <!-- The content of each page goes here -->
-  <main>
+  <!-- Page Content -->
+  <main class="min-h-screen">
     {{ content }}
   </main>
 
+  <!-- Footer Include -->
   {% include footer.html %}
 
+  <!-- Mobile menu JS -->
+  <script>
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    const toggle = document.getElementById('mobileBusinessToggle');
+    const sub = document.getElementById('mobileBusinessMenu');
+    toggle && toggle.addEventListener('click', () => sub.classList.toggle('hidden'));
+  </script>
 </body>
 </html>
