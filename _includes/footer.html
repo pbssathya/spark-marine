@@ -1,0 +1,16 @@
+<!-- FOOTER -->
+<footer class="bg-[#001f3f] text-white py-6 text-center text-sm">
+  © <span id="year"></span> Spark Marine Company Limited
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const btn = document.getElementById('mobileMenuBtn');
+  const menu = document.getElementById('mobileMenu');
+  if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+  const toggle = document.getElementById('mobileBusinessToggle');
+  const sub = document.getElementById('mobileBusinessMenu');
+  if (toggle) toggle.addEventListener('click', () => sub.classList.toggle('hidden'));
+</script>
