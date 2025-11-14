@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hero-bg { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); }
+    .dropdown { position: relative; }
+    .dropdown-content {
+      position: absolute; top: 100%; left: 0;
+      background-color: #002a5c;
+      min-width: 220px; border-radius: 0.25rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      opacity: 0; transform: translateY(5px);
+      pointer-events: none; transition: all 0.2s ease; z-index: 50;
+    }
+    .dropdown-content a {
+      display:block; padding:10px 16px; color:#fff; 
+      text-decoration:none; white-space:nowrap;
+    }
+    .dropdown-content a:hover { background:#003366; color:#ffcc00; }
+    .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
+      opacity:1; transform:translateY(0); pointer-events:auto;
+    }
+    .iso-glow {
+      animation: glow 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { color: #ffcc00; }
+      to   { color: #fff3b0; }
+    }
+  </style>
+</head>
+
+<body class="antialiased text-slate-800 bg-white">
+
+  {% include header.html %}
+
+  <!-- The content of each page goes here -->
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>
