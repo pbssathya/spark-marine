@@ -10,7 +10,6 @@
   <meta name="author" content="Spark Marine Company Limited" />
   <link rel="canonical" href="https://pbssathya.github.io/spark-marine/index.html" />
 
-  <!-- Open Graph (Facebook / LinkedIn preview) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Spark Marine Company Limited — Marine Electronics, Navigation & Automation" />
   <meta property="og:description" content="Spark Marine Company Limited — 20+ years of experience in Marine Electronics, Navigation, Communication, Automation and Environmental systems." />
@@ -20,20 +19,17 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Spark Marine Company Limited" />
   <meta name="twitter:description" content="20+ years of experience in Marine Electronics, Navigation, Communication, Automation and Environmental systems." />
   <meta name="twitter:image" content="https://pbssathya.github.io/spark-marine/assets/og-image.jpg" />
 
-  <!-- Mobile / Browser theming -->
   <link rel="icon" href="./assets/favicon-32.png" sizes="32x32" />
   <link rel="icon" href="./assets/favicon-16.png" sizes="16x16" />
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
   <link rel="manifest" href="./site.webmanifest" />
   <meta name="theme-color" content="#001f3f" />
 
-  <!-- JSON-LD Organization schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,6 +60,7 @@
   <style>
     .hero-bg { background: linear-gradient(135deg, #001f3f 0%, #003366 100%); }
     .dropdown { position: relative; }
+
     .dropdown-content {
       position: absolute; top: 100%; left: 0;
       background-color: #002a5c;
@@ -76,15 +73,23 @@
       display:block; padding:10px 16px; color:#fff; text-decoration:none; white-space:nowrap;
     }
     .dropdown-content a:hover { background:#003366; color:#ffcc00; }
-    .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
       opacity:1; transform:translateY(0); pointer-events:auto;
     }
+
     .iso-glow {
       animation: glow 2.5s ease-in-out infinite alternate;
     }
     @keyframes glow {
       from { color: #ffcc00; }
       to { color: #fff3b0; }
+    }
+
+    /* === Option A Tight Spacing === */
+    .tight-text p {
+      margin-bottom: 0.75rem !important;
+      line-height: 1.55;
     }
   </style>
 </head>
@@ -95,6 +100,7 @@
   <header class="bg-[#001f3f] text-white sticky top-0 z-50 shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
+
         <a href="index.html#home" class="flex items-center gap-3">
           <img src="./assets/logo.png" alt="Spark Marine Logo" class="h-12 w-12 object-contain" />
           <div>
@@ -104,8 +110,8 @@
           </div>
         </a>
 
-        <!-- DESKTOP NAV -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <!-- MENU -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium relative">
           <a href="index.html#home" class="hover:text-amber-400">Home</a>
 
           <div class="dropdown relative">
@@ -144,48 +150,50 @@
   <!-- HERO -->
   <section id="home" class="hero-bg text-white py-20 px-6 text-center">
     <h1 class="text-4xl font-bold">20+ Years of Expertise in Marine Electronics, Navigation, Communication and Automation Engineer</h1>
-    <p class="mt-4 max-w-2xl mx-auto text-gray-200">Serving the Middle East, Asia & Beyond — with presence in Saudi Arabia, Bahrain, India, Singapore, and Indonesia.</p>
+    <p class="mt-4 max-w-2xl mx-auto text-gray-200">
+      Serving the Middle East, Asia & Beyond — with presence in Saudi Arabia, Bahrain, India, Singapore, and Indonesia.
+    </p>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <section id="about" class="tight-text max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <h2 class="text-2xl font-semibold mb-6 text-slate-800">Company Profile</h2>
-    <p class="text-slate-700 leading-relaxed mb-4">
-      Spark Marine Company Limited, head office in Dammam, Saudi Arabia, has over 20 years of proven experience in Marine Electronics, Communication, Navigation, Automation, and Environmental Equipment. 
+    <p>
+      Spark Marine Company Limited, head office in Dammam, Saudi Arabia, has over 20 years of proven experience in Marine Electronics, Communication, Navigation, Automation, and Environmental Equipment.
     </p>
-    <p class="text-slate-700 leading-relaxed">
+    <p>
       Our diverse engineering team brings deep technical expertise in repairing and maintaining onboard equipment, providing round-the-clock service for vessels at Saudi Arabia and also at Bahrain and overseas ports. The professional excellence and dedication of our certified engineers form the cornerstone of Spark Marine’s reputation in both domestic and international markets.
     </p>
   </section>
 
   <!-- STRENGTH -->
-  <section id="strength" class="bg-gray-50 py-16">
+  <section id="strength" class="tight-text bg-gray-50 py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold mb-6 text-slate-800">Our Strength</h2>
-      <p class="text-slate-700 leading-relaxed mb-4">
+      <p>
         Spark Marine Company Limited leads in Integration Solutions and quality service across the Middle East, particularly in Saudi Arabia and the GCC Coastal Region. We are proud to be among the few companies fully equipped with the necessary facilities, backed by a dedicated team of engineers and designers. Our response time is among the fastest in the industry—within 30 minutes—demonstrating our commitment to valuing our customers’ time.
       </p>
-      <p class="text-slate-700 leading-relaxed">
+      <p>
         We also extend our expertise globally, offering services at ports across Singapore, and Indonesia. From installation to commissioning and turnkey project management, Spark Marine goes the extra mile to fulfill every customer commitment with precision and reliability.
       </p>
     </div>
   </section>
 
   <!-- QUALITY -->
-  <section id="quality" class="py-16">
+  <section id="quality" class="tight-text py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold mb-6 text-slate-800">Quality</h2>
-      <p class="text-slate-700 leading-relaxed">
+      <p>
         We deliver high-quality services for Marine Electronics, Electrical, Communication, Environmental, and Navigational Systems, as well as Automation and Instrumentation. Spark Marine never compromises on quality — achieving high levels of customer satisfaction and building long-term relationships. Our engineers are equipped with the latest communication technology, ensuring 24×7 global connectivity.
       </p>
     </div>
   </section>
 
   <!-- VISION -->
-  <section id="vision" class="bg-gray-50 py-16">
+  <section id="vision" class="tight-text bg-gray-50 py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl font-semibold mb-4 text-slate-800">Our Vision</h2>
-      <p class="text-slate-700 leading-relaxed max-w-3xl mx-auto">
+      <p class="max-w-3xl mx-auto">
         To continuously deliver trusted, technology-driven, and sustainable marine solutions that exceed client expectations across the globe.
       </p>
     </div>
@@ -195,14 +203,16 @@
   <section id="contact" class="bg-gray-100 py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold mb-6 text-center text-slate-800">Contact Us</h2>
-      <div class="grid grid-cols-1 gap-8 mt-10">
+
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 mt-10">
         <div class="bg-white p-6 rounded-xl shadow">
           <h4 class="font-semibold">Saudi Arabia (Head Office)</h4>
           <p class="text-sm mt-2 text-slate-700 leading-relaxed">
             Ash Sharq Dist. Al 1<br>
             Al Khobar<br>
             Mobile: +966 546274044 / 599578429<br>
-            Email: <a href="mailto:info@sparkmarine.net" class="text-blue-600 hover:underline">info@sparkmarine.net</a>
+            Email:
+            <a href="mailto:info@sparkmarine.net" class="text-blue-600 hover:underline">info@sparkmarine.net</a>
           </p>
         </div>
       </div>
@@ -211,18 +221,19 @@
 
   <!-- FOOTER -->
   <footer class="bg-[#001f3f] text-white py-6 text-center text-sm">
-    © <span id="year"></span> Spark Marine Company Limited 
+    © <span id="year"></span> Spark Marine Company Limited
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
     const btn = document.getElementById('mobileMenuBtn');
     const menu = document.getElementById('mobileMenu');
     btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
     const toggle = document.getElementById('mobileBusinessToggle');
     const sub = document.getElementById('mobileBusinessMenu');
     toggle && toggle.addEventListener('click', () => sub.classList.toggle('hidden'));
   </script>
 </body>
 </html>
- 
