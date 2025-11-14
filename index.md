@@ -8,7 +8,7 @@ title: "Spark Marine Company Limited — Marine Electronics, Navigation & Automa
   id="home"
   class="relative text-white py-24 px-6 text-center"
   style="
-    background: url('/spark-marine/assets/hero-ship.jpg') center/cover no-repeat;
+    background: url('/spark-marine/assets/hero-home.jpg') center/cover no-repeat;
     background-attachment: fixed;
   "
 >
