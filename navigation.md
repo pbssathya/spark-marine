@@ -5,7 +5,7 @@ title: Navigation Equipment
 
 <!-- HERO SECTION WITH BACKGROUND -->
 <section class="relative h-[60vh] flex items-center justify-center text-center text-white"
- style="background: url('/spark-marine/assets/images/navigation-bg.jpg') center/cover no-repeat;">
+ style="background: url('/spark-marine/assets/navigation-bg.jpg') center/cover no-repeat;">
   <div class="absolute inset-0 bg-black/40"></div>
 
   <div class="relative z-10 px-4">
